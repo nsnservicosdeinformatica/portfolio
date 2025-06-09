@@ -1,5 +1,6 @@
 name: Deploy Vue.js to GitHub Pages
 
+# Workflow para fazer o build e deploy do projeto Vue.js
 on:
   push:
     branches: [ main ]
