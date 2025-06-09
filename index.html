@@ -29,8 +29,7 @@
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#portfolio">Portfólio</a></li>
-                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#solucoes">Soluções</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
             <div class="menu-mobile">
@@ -58,9 +57,6 @@
                         <span class="stat-number" data-value="10">10+</span>
                         <span class="stat-label">Anos de Experiência</span>
                     </div>
-                    <div class="stat-progress">
-                        <div class="progress-bar" data-value="100"></div>
-                    </div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-icon">
@@ -69,9 +65,6 @@
                     <div class="stat-content">
                         <span class="stat-number" data-value="500">500+</span>
                         <span class="stat-label">Projetos Entregues</span>
-                    </div>
-                    <div class="stat-progress">
-                        <div class="progress-bar" data-value="85"></div>
                     </div>
                 </div>
                 <div class="stat-card">
@@ -82,9 +75,6 @@
                         <span class="stat-number" data-value="100">100%</span>
                         <span class="stat-label">Satisfação dos Clientes</span>
                     </div>
-                    <div class="stat-progress">
-                        <div class="progress-bar" data-value="100"></div>
-                    </div>
                 </div>
             </div>
 
@@ -93,15 +83,18 @@
                     <span class="button-icon"><i class="fas fa-paper-plane"></i></span>
                     <span class="button-text">Iniciar Projeto</span>
                 </a>
-                <a href="#portfolio" class="cta-button secondary">
+                <a href="#solucoes" class="cta-button secondary">
                     <span class="button-icon"><i class="fas fa-briefcase"></i></span>
-                    <span class="button-text">Ver Portfólio</span>
+                    <span class="button-text">Ver Soluções</span>
                 </a>
             </div>
 
             <div class="tech-stack">
-                <div class="tech-item" data-tooltip="React Native">
-                    <i class="fab fa-react"></i>
+                <div class="tech-item" data-tooltip="Mobile (Flutter & React Native)">
+                    <i class="fas fa-mobile-screen-button"></i>
+                </div>
+                <div class="tech-item" data-tooltip="Microsoft (.NET & Azure)">
+                    <i class="fab fa-microsoft"></i>
                 </div>
                 <div class="tech-item" data-tooltip="Node.js">
                     <i class="fab fa-node-js"></i>
@@ -111,6 +104,12 @@
                 </div>
                 <div class="tech-item" data-tooltip="Python">
                     <i class="fab fa-python"></i>
+                </div>
+                <div class="tech-item" data-tooltip="HTML5">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <div class="tech-item" data-tooltip="Banco de Dados">
+                    <i class="fas fa-database"></i>
                 </div>
                 <div class="tech-item" data-tooltip="Docker">
                     <i class="fab fa-docker"></i>
@@ -131,6 +130,7 @@
             <div class="section-header">
                 <span class="section-badge">Sobre Nós</span>
                 <h2>Nossa História</h2>
+                <p class="section-subtitle">Mais de uma década transformando negócios através da tecnologia</p>
             </div>
             <div class="sobre-content">
                 <div class="sobre-texto">
@@ -169,6 +169,7 @@
             <div class="section-header">
                 <span class="section-badge">Nossos Serviços</span>
                 <h2>Soluções Tecnológicas</h2>
+                <p class="section-subtitle">Oferecemos serviços completos em tecnologia para seu negócio</p>
             </div>
             <div class="servicos-grid">
                 <div class="servico-card">
@@ -223,120 +224,120 @@
         </div>
     </section>
 
-    <!-- Portfólio Section -->
-    <section id="portfolio" class="portfolio">
+    <!-- Soluções Section -->
+    <section id="solucoes" class="solucoes">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">Portfólio</span>
-                <h2>Nossos Projetos</h2>
+                <span class="section-badge">Nossas Soluções</span>
+                <h2>Conheça Nossas Soluções</h2>
+                <p class="section-subtitle">Desenvolvemos soluções tecnológicas inovadoras para impulsionar seu negócio</p>
             </div>
-            <div class="portfolio-filters">
-                <button class="filter-btn active" data-filter="todos">Todos</button>
-                <button class="filter-btn" data-filter="apps">Aplicativos</button>
-                <button class="filter-btn" data-filter="web">Web</button>
-                <button class="filter-btn" data-filter="automotivo">Automotivo</button>
-                <button class="filter-btn" data-filter="restaurante">Restaurante</button>
+            <div class="solucoes-filters">
+                <button class="filter-btn active" data-filter="todos">Todas as Soluções</button>
+                <button class="filter-btn" data-filter="landing">Landing Pages</button>
+                <button class="filter-btn" data-filter="automotivo">Sistemas Automotivos</button>
+                <button class="filter-btn" data-filter="restaurante">Gestão de Restaurantes</button>
+                <button class="filter-btn" data-filter="igreja">Gestão de Igrejas</button>
             </div>
-            <div class="portfolio-grid">
-                <div class="portfolio-item" data-category="apps">
-                    <div class="portfolio-img">
-                        <img src="assets/portfolio/app1.jpg" alt="Aplicativo de Gestão">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-info">
-                                <span class="portfolio-category">Aplicativo</span>
-                                <h3>App Gestão Empresarial</h3>
-                                <p>Sistema completo de gestão para empresas</p>
-                                <div class="portfolio-tech">
+            <div class="solucoes-grid">
+                <!-- Landing Pages -->
+                <div class="solucao-card" data-category="landing">
+                    <div class="solucao-img">
+                        <img src="assets/solucoes/landing1.jpg" alt="Landing Page Empresarial">
+                        <div class="solucao-overlay">
+                            <div class="solucao-info">
+                                <span class="solucao-category">Landing Page</span>
+                                <h3>Landing Pages Empresariais</h3>
+                                <p>Sites modernos e otimizados para converter visitantes em clientes</p>
+                                <div class="solucao-features">
+                                    <span><i class="fas fa-mobile-alt"></i> Responsivo</span>
+                                    <span><i class="fas fa-tachometer-alt"></i> Alta Performance</span>
+                                    <span><i class="fas fa-search"></i> SEO Otimizado</span>
+                                </div>
+                                <div class="solucao-tech">
+                                    <span>HTML5</span>
+                                    <span>CSS3</span>
+                                    <span>JavaScript</span>
+                                </div>
+                                <a href="#contato" class="solucao-link">Solicitar Orçamento</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Manuauto -->
+                <div class="solucao-card" data-category="automotivo">
+                    <div class="solucao-img">
+                        <img src="assets/solucoes/manuauto.jpg" alt="Sistema Manuauto">
+                        <div class="solucao-overlay">
+                            <div class="solucao-info">
+                                <span class="solucao-category">Sistema Automotivo</span>
+                                <h3>Manuauto</h3>
+                                <p>Sistema completo de gestão e indicação para concessionárias e oficinas</p>
+                                <div class="solucao-features">
+                                    <span><i class="fas fa-car"></i> Gestão de Veículos</span>
+                                    <span><i class="fas fa-users"></i> CRM Avançado</span>
+                                    <span><i class="fas fa-chart-line"></i> Relatórios</span>
+                                </div>
+                                <div class="solucao-tech">
+                                    <span>.NET</span>
+                                    <span>Azure</span>
+                                    <span>SQL Server</span>
+                                </div>
+                                <a href="#contato" class="solucao-link">Solicitar Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comanda Digital -->
+                <div class="solucao-card" data-category="restaurante">
+                    <div class="solucao-img">
+                        <img src="assets/solucoes/comanda.jpg" alt="Comanda Digital">
+                        <div class="solucao-overlay">
+                            <div class="solucao-info">
+                                <span class="solucao-category">Gestão de Restaurantes</span>
+                                <h3>Comanda Digital</h3>
+                                <p>Aplicativo para controle de pedidos e gestão de restaurantes</p>
+                                <div class="solucao-features">
+                                    <span><i class="fas fa-qrcode"></i> QR Code</span>
+                                    <span><i class="fas fa-clock"></i> Tempo Real</span>
+                                    <span><i class="fas fa-chart-pie"></i> Gestão</span>
+                                </div>
+                                <div class="solucao-tech">
+                                    <span>Flutter</span>
+                                    <span>Node.js</span>
+                                    <span>MongoDB</span>
+                                </div>
+                                <a href="#contato" class="solucao-link">Solicitar Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SGI -->
+                <div class="solucao-card" data-category="igreja">
+                    <div class="solucao-img">
+                        <img src="assets/solucoes/sgi.jpg" alt="Sistema de Gestão de Igrejas">
+                        <div class="solucao-overlay">
+                            <div class="solucao-info">
+                                <span class="solucao-category">Gestão de Igrejas</span>
+                                <h3>SGI - Sistema de Gestão de Igrejas</h3>
+                                <p>Aplicativo completo para gestão de igrejas e congregações</p>
+                                <div class="solucao-features">
+                                    <span><i class="fas fa-users"></i> Gestão de Membros</span>
+                                    <span><i class="fas fa-calendar-alt"></i> Eventos</span>
+                                    <span><i class="fas fa-donate"></i> Dízimos</span>
+                                </div>
+                                <div class="solucao-tech">
                                     <span>React Native</span>
                                     <span>Node.js</span>
-                                    <span>AWS</span>
+                                    <span>MongoDB</span>
                                 </div>
-                                <a href="#" class="portfolio-link">Ver detalhes</a>
+                                <a href="#contato" class="solucao-link">Solicitar Demo</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="portfolio-item" data-category="web">
-                    <div class="portfolio-img">
-                        <img src="assets/portfolio/web1.jpg" alt="Plataforma SaaS">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-info">
-                                <span class="portfolio-category">Web</span>
-                                <h3>Plataforma SaaS</h3>
-                                <p>Solução em nuvem para gestão de processos</p>
-                                <a href="#" class="portfolio-link">Ver detalhes</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="automotivo">
-                    <div class="portfolio-img">
-                        <img src="assets/portfolio/auto1.jpg" alt="Sistema Automotivo">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-info">
-                                <h3>Sistema de Gestão Automotiva</h3>
-                                <p>Gestão completa para concessionárias</p>
-                                <a href="#" class="portfolio-link">Ver detalhes</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="restaurante">
-                    <div class="portfolio-img">
-                        <img src="assets/portfolio/rest1.jpg" alt="Sistema para Restaurantes">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-info">
-                                <h3>Gestão de Restaurantes</h3>
-                                <p>Sistema completo para gestão de restaurantes</p>
-                                <a href="#" class="portfolio-link">Ver detalhes</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="apps">
-                    <div class="portfolio-img">
-                        <img src="assets/portfolio/app2.jpg" alt="App Delivery">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-info">
-                                <h3>App de Delivery</h3>
-                                <p>Plataforma completa de delivery</p>
-                                <a href="#" class="portfolio-link">Ver detalhes</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="web">
-                    <div class="portfolio-img">
-                        <img src="assets/portfolio/web2.jpg" alt="E-commerce">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-info">
-                                <h3>E-commerce Premium</h3>
-                                <p>Plataforma de vendas online</p>
-                                <a href="#" class="portfolio-link">Ver detalhes</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Produtos Section -->
-    <section id="produtos" class="produtos">
-        <div class="container">
-            <h2>Nossos Produtos</h2>
-            <div class="produtos-grid">
-                <div class="produto-card">
-                    <img src="assets/placeholder-produto1.jpg" alt="Produto Automotivo">
-                    <h3>Soluções Automotivas</h3>
-                    <p>Sistemas inteligentes para o setor automotivo</p>
-                    <a href="#" class="produto-link">Conhecer mais</a>
-                </div>
-                <div class="produto-card">
-                    <img src="assets/placeholder-produto2.jpg" alt="Produto Restaurante">
-                    <h3>Soluções para Restaurantes</h3>
-                    <p>Gestão completa para o seu negócio</p>
-                    <a href="#" class="produto-link">Conhecer mais</a>
                 </div>
             </div>
         </div>
@@ -345,32 +346,25 @@
     <!-- Contato Section -->
     <section id="contato" class="contato">
         <div class="container">
-            <h2>Entre em Contato</h2>
+            <div class="section-header">
+                <span class="section-badge">Contato</span>
+                <h2>Vamos Conversar?</h2>
+                <p class="section-subtitle">Entre em contato conosco pelo WhatsApp e vamos discutir como podemos ajudar seu negócio</p>
+            </div>
             <div class="contato-content">
-                <form id="contato-form" class="contato-form">
-                    <div class="form-group">
-                        <input type="text" id="nome" name="nome" required placeholder="Seu nome">
+                <div class="whatsapp-card">
+                    <div class="whatsapp-icon">
+                        <i class="fab fa-whatsapp"></i>
                     </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" required placeholder="Seu e-mail">
-                    </div>
-                    <div class="form-group">
-                        <textarea id="mensagem" name="mensagem" required placeholder="Sua mensagem"></textarea>
-                    </div>
-                    <button type="submit" class="submit-button">Enviar Mensagem</button>
-                </form>
-                <div class="contato-info">
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <p>contato@nsn.com.br</p>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-phone"></i>
-                        <p>(XX) XXXX-XXXX</p>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>São Paulo, SP - Brasil</p>
+                    <h3>Fale Conosco</h3>
+                    <p>Estamos prontos para atender você e transformar suas ideias em realidade</p>
+                    <a href="https://wa.me/5511999999999" class="whatsapp-button" target="_blank">
+                        <span class="button-icon"><i class="fab fa-whatsapp"></i></span>
+                        <span class="button-text">Iniciar Conversa</span>
+                    </a>
+                    <div class="whatsapp-info">
+                        <span><i class="fas fa-clock"></i> Atendimento em horário comercial</span>
+                        <span><i class="fas fa-check-circle"></i> Resposta em até 1 hora</span>
                     </div>
                 </div>
             </div>
@@ -386,9 +380,9 @@
                     <p>Transformando o futuro através da tecnologia</p>
                 </div>
                 <div class="footer-social">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
                 </div>
             </div>
             <div class="footer-bottom">
