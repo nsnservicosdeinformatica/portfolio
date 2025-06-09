@@ -4,6 +4,9 @@ on:
   push:
     branches: [ main ]
 
+permissions:
+  contents: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -41,4 +44,5 @@ jobs:
             pagina-games/babel.config.js
             pagina-games/jsconfig.json
             pagina-games/.gitignore
-            pagina-games/README.md 
+            pagina-games/README.md
+          token: ${{ secrets.GITHUB_TOKEN }} 
