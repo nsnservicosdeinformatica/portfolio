@@ -29,11 +29,15 @@ jobs:
         run: |
           cd pagina-games
           npm run build
+          # Criar arquivo .nojekyll para evitar processamento do Jekyll
+          touch dist/.nojekyll
+          # Mover arquivos do build para a raiz
+          cp -r dist/* ../
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: pagina-games/dist
+          folder: .  # Usar a raiz do repositório
           branch: main
           clean: false
           clean-exclude: |
