@@ -1,0 +1,476 @@
+<html lang="pt-BR"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSN - Soluções Tecnológicas</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/ico-logo-claro.png">
+    <meta name="description" content="NSN - Mais de 10 anos desenvolvendo soluções tecnológicas inovadoras para empresas. Aplicativos, serviços de TI, SaaS, DaaS e muito mais.">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;family=Orbitron:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<style>
+    @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-20px); }
+    }
+    
+    .animate-on-scroll {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.6s ease-out;
+    }
+    
+    .animate-on-scroll.animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .portfolio-item {
+        opacity: 0;
+        transform: scale(0.9);
+        transition: all 0.3s ease-out;
+    }
+    
+    .portfolio-item.show {
+        opacity: 1;
+        transform: scale(1);
+    }
+    
+    .tech-item {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.3s ease-out;
+    }
+    
+    .tech-item.animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+</style></head>
+<body class="" style="">
+    <!-- Elementos de Background -->
+    <div class="tech-circles">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="circle circle-3"></div>
+    </div>
+
+    <!-- Header/Navegação -->
+    <header class="header scrolled">
+        <nav class="nav-container">
+            <div class="logo">
+                <img src="assets/images/logo-nsn1.png" alt="Logo NSN" style="height: 75px; width: auto">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#solucoes">Portfólios</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="menu-mobile">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <div class="tech-badge">
+                <span class="badge-icon"><i class="fas fa-code"></i></span>
+                <span>Excelência em Tecnologia</span>
+            </div>
+            <h1>Transformando Ideias em <span class="highlight">Soluções Digitais</span></h1>
+            <p class="hero-subtitle">Desenvolvemos soluções tecnológicas inovadoras para impulsionar o crescimento do seu negócio</p>
+            
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number" data-value="10">10</span>
+                        <span class="stat-label">Anos de Experiência</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number" data-value="500">500</span>
+                        <span class="stat-label">Projetos Entregues</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number" data-value="100">100</span>
+                        <span class="stat-label">Satisfação dos Clientes</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-cta">
+                <a href="#contato" class="cta-button primary">
+                    <span class="button-icon"><i class="fas fa-paper-plane"></i></span>
+                    <span class="button-text">Iniciar Projeto</span>
+                </a>
+                <a href="#solucoes" class="cta-button secondary">
+                    <span class="button-icon"><i class="fas fa-briefcase"></i></span>
+                    <span class="button-text">Ver Portfólios</span>
+                </a>
+            </div>
+
+            <div class="tech-stack">
+                <div class="tech-item animate" data-tooltip="Mobile (Flutter &amp; React Native)">
+                    <i class="fas fa-mobile-screen-button"></i>
+                </div>
+                <div class="tech-item animate" data-tooltip="Microsoft (.NET &amp; Azure)">
+                    <i class="fab fa-microsoft"></i>
+                </div>
+                <div class="tech-item animate" data-tooltip="Node.js">
+                    <i class="fab fa-node-js"></i>
+                </div>
+                <div class="tech-item animate" data-tooltip="AWS">
+                    <i class="fab fa-aws"></i>
+                </div>
+                <div class="tech-item animate" data-tooltip="Python">
+                    <i class="fab fa-python"></i>
+                </div>
+                <div class="tech-item animate" data-tooltip="HTML5">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <div class="tech-item animate" data-tooltip="Banco de Dados">
+                    <i class="fas fa-database"></i>
+                </div>
+                <div class="tech-item animate" data-tooltip="Docker">
+                    <i class="fab fa-docker"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Sobre Nós</span>
+                <h2>Nossa História</h2>
+                <p class="section-subtitle">Mais de uma década transformando negócios através da tecnologia</p>
+            </div>
+            <div class="sobre-content">
+                <div class="sobre-texto">
+                    <p>Com mais de uma década de experiência no mercado, a NSN se destaca como uma empresa líder em desenvolvimento de soluções tecnológicas. Nossa missão é transformar negócios através da tecnologia, oferecendo produtos e serviços inovadores que impulsionam o crescimento dos nossos clientes.</p>
+                    <div class="diferenciais">
+                        <div class="diferencial-item">
+                            <div class="diferencial-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <span>Qualidade Garantida</span>
+                            <p>Metodologias ágeis e processos otimizados</p>
+                        </div>
+                        <div class="diferencial-item">
+                            <div class="diferencial-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <span>Inovação Constante</span>
+                            <p>Tecnologias de ponta e soluções modernas</p>
+                        </div>
+                        <div class="diferencial-item">
+                            <div class="diferencial-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <span>Equipe Especializada</span>
+                            <p>Profissionais altamente qualificados</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços Section -->
+    <section id="servicos" class="servicos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Nossos Serviços</span>
+                <h2>Soluções Tecnológicas</h2>
+                <p class="section-subtitle">Oferecemos serviços completos em tecnologia para seu negócio</p>
+            </div>
+            <div class="servicos-grid">
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Desenvolvimento de Apps</h3>
+                    <p>Aplicativos nativos e híbridos para iOS e Android</p>
+                    <ul class="servico-features">
+                        <li><i class="fas fa-check"></i> UI/UX Moderno</li>
+                        <li><i class="fas fa-check"></i> Performance Otimizada</li>
+                        <li><i class="fas fa-check"></i> Integração com APIs</li>
+                    </ul>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Serviços de TI</h3>
+                    <p>Consultoria e suporte técnico especializado</p>
+                    <ul class="servico-features">
+                        <li><i class="fas fa-check"></i> Infraestrutura Cloud</li>
+                        <li><i class="fas fa-check"></i> Segurança Avançada</li>
+                        <li><i class="fas fa-check"></i> Suporte 24/7</li>
+                    </ul>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>SaaS &amp; DaaS</h3>
+                    <p>Soluções em nuvem personalizadas</p>
+                    <ul class="servico-features">
+                        <li><i class="fas fa-check"></i> Escalabilidade</li>
+                        <li><i class="fas fa-check"></i> Alta Disponibilidade</li>
+                        <li><i class="fas fa-check"></i> Backup Automático</li>
+                    </ul>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Landing Pages</h3>
+                    <p>Sites institucionais e páginas de conversão</p>
+                    <ul class="servico-features">
+                        <li><i class="fas fa-check"></i> Design Responsivo</li>
+                        <li><i class="fas fa-check"></i> SEO Otimizado</li>
+                        <li><i class="fas fa-check"></i> Alta Performance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Soluções Section -->
+    <section id="solucoes" class="solucoes">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Nossos Portfólios</span>
+                <h2>Conheça Nossos Portfólios</h2>
+                <p class="section-subtitle">Desenvolvemos soluções tecnológicas inovadoras para impulsionar seu negócio</p>
+            </div>
+            <div class="solucoes-filters">
+                <button class="filter-btn active" data-filter="todos">Todas os Portfólios</button>
+                <button class="filter-btn" data-filter="landing">Landing Pages</button>
+                <button class="filter-btn" data-filter="automotivo">Sistemas Automotivos</button>
+                <!-- <button class="filter-btn" data-filter="restaurante">Gestão de Restaurantes</button> -->
+                <!-- <button class="filter-btn" data-filter="igreja">Gestão de Igrejas</button> -->
+                <button class="filter-btn" data-filter="jogos">Jogos</button>
+            </div>
+            <div class="solucoes-grid">
+                <!-- Landing Pages -->
+                <div class="solucao-card" data-category="landing">
+                    <div class="solucao-info">
+                        <span class="solucao-category">Landing Page</span>
+                        <h3>Landing Pages Empresariais</h3>
+                        <p>Crie landing pages de alta conversão para suas campanhas de marketing.</p>
+                        <a href="#" class="solucao-link" onclick="toggleLandingPages(); return false;">
+                            <i class="fas fa-external-link-alt"></i> Ver Landing Pages
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card para Jogos -->
+                <div class="solucao-card" data-category="jogos">
+                    <div class="solucao-info">
+                        <span class="solucao-category"><i class="fas fa-gamepad"></i> Jogos</span>
+                        <h3>Aplicativos de Jogos</h3>
+                        <p>Descubra nossos jogos disponíveis na PlayStore!</p>
+                        <a href="#" class="solucao-link" onclick="toggleGamesModal(); return false;">
+                            <i class="fas fa-mobile-alt"></i> Ver Jogos
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card para Manuauto -->
+                <div class="solucao-card" data-category="automotivo">
+                    <div class="solucao-info">
+                        <span class="solucao-category"><i class="fas fa-mobile-alt"></i> Gestão Automotiva</span>
+                        <h3>Manuauto</h3>
+                        <p>Revolucione o serviço em sua oficina mecânica ou centro de lubrificação.</p>
+                        <a href="https://play.google.com/store/apps/details?id=br.com.manuauto" class="solucao-link" target="_blank">
+                            <i class="fab fa-google-play"></i> Baixar App
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card para Comanda Digital -->
+                <!--
+                <div class="solucao-card" data-category="restaurante">
+                    <div class="solucao-info">
+                        <span class="solucao-category">Gestão de Restaurantes</span>
+                        <h3>Comanda Digital</h3>
+                        <p>Agilize o atendimento e o controle de pedidos em restaurantes e bares.</p>
+                        <a href="#" class="solucao-link" target="_blank">
+                            <i class="fab fa-google-play"></i> Baixar App
+                        </a>
+                    </div>
+                </div>
+                -->
+
+                <!-- SGI -->
+                <!--
+                <div class="solucao-card" data-category="igreja">
+                    <div class="solucao-info">
+                        <span class="solucao-category">Gestão de Igrejas</span>
+                        <h3>SGI - Sistema de Gestão de Igrejas</h3>
+                        <a href="https://play.google.com/store/apps/details?id=com.nsn.sgi" class="solucao-link" target="_blank">
+                            <i class="fab fa-google-play"></i> Baixar App
+                        </a>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Contato</span>
+                <h2>Vamos Conversar?</h2>
+                <p class="section-subtitle">Entre em contato conosco pelo WhatsApp e vamos discutir como podemos ajudar seu negócio</p>
+            </div>
+            <div class="contato-content">
+                <div class="whatsapp-card">
+                    <div class="whatsapp-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>Fale Conosco</h3>
+                    <p>Estamos prontos para atender você e transformar suas ideias em realidade</p>
+                    <a href="https://wa.me/5511999999999" class="whatsapp-button" target="_blank">
+                        <span class="button-icon"><i class="fab fa-whatsapp"></i></span>
+                        <span class="button-text">Iniciar Conversa</span>
+                    </a>
+                    <div class="whatsapp-info">
+                        <span><i class="fas fa-clock"></i> Atendimento em horário comercial</span>
+                        <span><i class="fas fa-check-circle"></i> Resposta em até 1 hora</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/images/logo-nsn1.png" alt="Logo NSN" style="height: 48px; width: auto;">
+                    <p>Transformando o futuro através da tecnologia</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 NSN. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de Landing Pages -->
+    <div id="landingPagesModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Nossas Landing Pages</h3>
+                <button class="modal-close" onclick="toggleLandingPages()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="landing-grid">
+                    <!-- Sua Primeira Venda Online -->
+                    <div class="landing-item">
+                        <div class="landing-info">
+                            <h4>Sua Primeira Venda Online</h4>
+                            <p>Landing page para captura de leads e vendas de produtos digitais</p>
+                            <a href="https://suaprimeiravendaonline11.netlify.app/" class="landing-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Visitar Site
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Sistema Viral Blog -->
+                    <div class="landing-item">
+                        <div class="landing-info">
+                            <h4>Sistema Viral Blog</h4>
+                            <p>Blog com conteúdo sobre marketing digital e estratégias de vendas</p>
+                            <a href="https://sistemaviral.blog.br/" class="landing-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Visitar Site
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Nail Designer Profissional -->
+                    <div class="landing-item">
+                        <div class="landing-info">
+                            <h4>Nail Designer Profissional</h4>
+                            <p>Landing page para profissionais de unhas e beleza</p>
+                            <a href="https://naildesignerprofissional.netlify.app/" class="landing-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Visitar Site
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Novo Modal para Jogos -->
+    <div id="gamesModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Nossos Jogos</h3>
+                <button class="modal-close" onclick="toggleGamesModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="games-grid">
+                    <!-- Ordem Certa Game -->
+                    <div class="game-item">
+                        <div class="game-info">
+                            <h4>Ordem Certa</h4>
+                            <p>Descubra a Ordem Certa! Quebra-cabeças viciantes para todas as idades.</p>
+                            <a href="https://play.google.com/store/apps/details?id=br.com.nsnsistemas.ordemcerta" class="game-link" target="_blank">
+                                <i class="fas fa-play"></i> Ver na PlayStore
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Confessa Game -->
+                    <div class="game-item">
+                        <div class="game-info">
+                            <h4>Confessa</h4>
+                            <p>O jogo de casais que transforma perguntas em momentos inesquecíveis. Conexão, cumplicidade e amor.</p>
+                            <a href="https://play.google.com/store/apps/details?id=com.confessagame" class="game-link" target="_blank">
+                                <i class="fas fa-play"></i> Ver na PlayStore
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+
+ </body></html>
