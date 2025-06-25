@@ -406,4 +406,5 @@ document.addEventListener('keydown', (event) => {
 });
 
 window.toggleLandingPages = toggleLandingPages;
-window.toggleGamesModal = toggleGamesModal; 
+window.toggleGamesModal = toggleGamesModal;
+window.toggleMenu = toggleMenu; 

@@ -77,6 +77,7 @@ body.modal-open .header {
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--glass-border);
     z-index: 1000;
+    pointer-events: auto;
 }
 
 .nav-container {
@@ -137,6 +138,43 @@ body.modal-open .header {
     display: none;
     font-size: 1.5rem;
     cursor: pointer;
+}
+
+/* Menu mobile ativo */
+.menu-mobile.active {
+    color: var(--primary-color);
+}
+
+.nav-menu.active {
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(10, 25, 47, 0.95);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid var(--glass-border);
+    padding: 1rem 0;
+    gap: 0;
+    z-index: 1001;
+}
+
+.nav-menu.active li {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.nav-menu.active li:last-child {
+    border-bottom: none;
+}
+
+.nav-menu.active a {
+    width: 100%;
+    display: block;
+    padding: 0.5rem 2rem;
 }
 
 /* Section Header - Estilo Padrão */
@@ -444,7 +482,6 @@ body.modal-open .header {
 /* Ajustes específicos para alguns ícones */
 .tech-item[data-tooltip="Microsoft (.NET & Azure)"] i {
     font-size: 1.8rem;
-    color: #00a4ef; /* Cor oficial da Microsoft */
 }
 
 .tech-item[data-tooltip="Mobile (Flutter & React Native)"] i {
@@ -562,6 +599,7 @@ body.modal-open .header {
     padding: 80px 0;
     background: var(--darker-bg);
     position: relative;
+    z-index: 10 !important;
 }
 
 .servicos h2 {
@@ -575,6 +613,8 @@ body.modal-open .header {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
+    position: relative;
+    z-index: 11 !important;
 }
 
 .servico-card {
@@ -586,6 +626,50 @@ body.modal-open .header {
     transition: var(--transition);
     position: relative;
     overflow: hidden;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    z-index: 12 !important;
+}
+
+/* Garantir que o terceiro card (SaaS & DaaS) sempre fique visível */
+.servico-card:nth-child(3) {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    z-index: 1;
+}
+
+/* Garantir que todos os cards de serviços mantenham visibilidade */
+.servicos-grid .servico-card {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+}
+
+/* Garantir que o conteúdo interno dos cards sempre fique visível */
+.servico-card * {
+    opacity: 1 !important;
+    visibility: visible !important;
+    z-index: 2 !important;
+}
+
+.servico-card h3,
+.servico-card p,
+.servico-card .servico-icon,
+.servico-card .servico-features,
+.servico-card .servico-features li {
+    opacity: 1 !important;
+    visibility: visible !important;
+    z-index: 2 !important;
+    position: relative;
+}
+
+/* Especificamente para o terceiro card (SaaS & DaaS) */
+.servico-card:nth-child(3) * {
+    opacity: 1 !important;
+    visibility: visible !important;
+    z-index: 3 !important;
 }
 
 .servico-card::before {
@@ -1821,4 +1905,10 @@ body.modal-open .header {
         min-width: 140px;
         padding: 0.6rem 1.2rem;
     }
+}
+
+/* Evitar que o header afete elementos abaixo durante scroll */
+.header.scrolled {
+    z-index: 1000;
+    pointer-events: auto;
 } 
