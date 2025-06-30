@@ -152,7 +152,7 @@ body.modal-open .header {
     top: 100%;
     left: 0;
     width: 100%;
-    background: rgba(10, 25, 47, 0.95);
+    background: rgba(10, 25, 47, 0.98);
     backdrop-filter: blur(10px);
     border-top: 1px solid var(--glass-border);
     padding: 1rem 0;
@@ -222,6 +222,10 @@ body.modal-open .header {
     min-height: 100vh;
     padding: 120px 0 60px;
     background: var(--darker-bg);
+    background-image: url('../assets/images/imagem-de-fundo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     position: relative;
     display: flex;
     align-items: center;
@@ -236,6 +240,7 @@ body.modal-open .header {
     width: 100%;
     height: 100%;
     background: 
+        linear-gradient(135deg, rgba(10, 25, 47, 0.8) 0%, rgba(2, 12, 27, 0.9) 100%),
         radial-gradient(circle at 20% 20%, rgba(0, 242, 254, 0.1) 0%, transparent 50%),
         radial-gradient(circle at 80% 80%, rgba(79, 172, 254, 0.1) 0%, transparent 50%);
     animation: pulse 15s infinite alternate;
