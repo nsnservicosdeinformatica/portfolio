@@ -309,7 +309,7 @@ body.modal-open .header {
     font-size: 1.2rem;
     color: var(--light-text);
     margin-bottom: 3rem;
-    max-width: 600px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
     line-height: 1.6;
@@ -605,6 +605,22 @@ body.modal-open .header {
     background: var(--darker-bg);
     position: relative;
     z-index: 10 !important;
+    background: var(--darker-bg);
+    position: relative;
+}
+
+.servicos::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(circle at 100% 0%, rgba(0, 242, 254, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 0% 100%, rgba(79, 172, 254, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 1;
 }
 
 .servicos h2 {
@@ -635,6 +651,7 @@ body.modal-open .header {
     visibility: visible !important;
     transform: none !important;
     z-index: 12 !important;
+    min-height: 600px; /* Padroniza altura dos cards */
 }
 
 /* Garantir que o terceiro card (SaaS & DaaS) sempre fique visível */
@@ -1916,4 +1933,61 @@ body.modal-open .header {
 .header.scrolled {
     z-index: 1000;
     pointer-events: auto;
+} 
+
+.diferenciais-grid {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    flex-wrap: nowrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    overflow-x: auto;
+}
+@media (max-width: 900px) {
+    .diferenciais-grid {
+        flex-wrap: wrap;
+        gap: 1.2rem;
+    }
+    .diferencial-item {
+        width: 100%;
+        min-width: 220px;
+        max-width: 100%;
+    }
+}
+.diferencial-item {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    padding: 1.5rem 1.2rem;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    transition: box-shadow 0.2s;
+}
+.diferencial-item:hover {
+    box-shadow: 0 6px 24px rgba(0,242,254,0.10);
+}
+.diferencial-icon {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+    align-self: center;
+}
+.diferencial-item strong {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    display: block;
+    margin-bottom: 0.2rem;
+}
+.diferencial-item p {
+    color: var(--light-text);
+    font-size: 1rem;
+    margin: 0;
 } 
